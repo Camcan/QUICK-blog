@@ -1,0 +1,18 @@
+<h1> Create Post </h1>
+
+<%= form_for :post, url: posts_path do |x| %>
+	<p>
+		<%= x.label :title %>
+		<br>
+		<%= x.text_field :title %>
+	</p>
+	<p>
+		<%= x.label :body %>
+		<br>
+		<%= x.text_area :body %>
+	</p>
+
+	<p>
+		<%= x.submit %>
+	</p>
+<% end %>
